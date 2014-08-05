@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FullMapViewController">
+            <connections>
+                <outlet property="mapView" destination="hMm-N7-Lve" id="sK7-Vg-rxT"/>
+                <outlet property="titleBar" destination="dVQ-tr-TkL" id="SqF-Cg-9yj"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hMm-N7-Lve">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="PcV-9K-qn2"/>
+                    </connections>
+                </mapView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBy-sF-tHh">
+                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem title="List" width="137" id="Irq-w1-Xtj">
+                            <color key="tintColor" red="0.98049726280000005" green="0.38429516419999998" blue="0.40425410579999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="closeView:" destination="-1" id="vDB-Rv-AjV"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem enabled="NO" title="Map" width="137" id="GUe-DO-vsK"/>
+                    </items>
+                </toolbar>
+                <navigationBar opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dVQ-tr-TkL">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <textAttributes key="titleTextAttributes">
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
+                        <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem title="Hello World" id="wxt-Rg-dbE"/>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="EBy-sF-tHh" secondAttribute="bottom" id="3tW-F6-n1d"/>
+                <constraint firstItem="EBy-sF-tHh" firstAttribute="leading" secondItem="dVQ-tr-TkL" secondAttribute="leading" id="9cb-pM-SfV"/>
+                <constraint firstItem="EBy-sF-tHh" firstAttribute="bottom" secondItem="hMm-N7-Lve" secondAttribute="bottom" id="CWz-7h-gVM"/>
+                <constraint firstItem="dVQ-tr-TkL" firstAttribute="top" secondItem="1" secondAttribute="top" id="JWo-y2-xsz"/>
+                <constraint firstItem="dVQ-tr-TkL" firstAttribute="top" secondItem="hMm-N7-Lve" secondAttribute="top" id="Z4L-XJ-vUJ"/>
+                <constraint firstItem="EBy-sF-tHh" firstAttribute="trailing" secondItem="hMm-N7-Lve" secondAttribute="trailing" id="ZY4-pP-eGg"/>
+                <constraint firstItem="EBy-sF-tHh" firstAttribute="trailing" secondItem="dVQ-tr-TkL" secondAttribute="trailing" id="b4U-xX-emc"/>
+                <constraint firstItem="EBy-sF-tHh" firstAttribute="leading" secondItem="hMm-N7-Lve" secondAttribute="leading" id="bcb-9B-bq1"/>
+                <constraint firstAttribute="trailing" secondItem="EBy-sF-tHh" secondAttribute="trailing" id="fkB-Bu-9SR"/>
+                <constraint firstItem="EBy-sF-tHh" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="uNy-wI-kEG"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

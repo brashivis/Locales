@@ -7,18 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F049938196E4C41003EBE8A /* JMCalloutButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F049937196E4C41003EBE8A /* JMCalloutButton.m */; };
+		9F509066197AF55E00F5D466 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F509065197AF55E00F5D466 /* MapKit.framework */; };
+		9F509067197AF57600F5D466 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F509063197AF4DD00F5D466 /* iAd.framework */; };
 		9F52C3CC196657F000D57EB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F52C3CB196657F000D57EB1 /* Foundation.framework */; };
 		9F52C3CE196657F000D57EB1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F52C3CD196657F000D57EB1 /* CoreGraphics.framework */; };
 		9F52C3D0196657F000D57EB1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F52C3CF196657F000D57EB1 /* UIKit.framework */; };
 		9F52C3D6196657F000D57EB1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F52C3D4196657F000D57EB1 /* InfoPlist.strings */; };
 		9F52C3D8196657F000D57EB1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F52C3D7196657F000D57EB1 /* main.m */; };
-		9F52C3DC196657F000D57EB1 /* JMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F52C3DB196657F000D57EB1 /* JMAppDelegate.m */; };
 		9F52C3DE196657F000D57EB1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F52C3DD196657F000D57EB1 /* Images.xcassets */; };
 		9F52C3E5196657F000D57EB1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F52C3E4196657F000D57EB1 /* XCTest.framework */; };
 		9F52C3E6196657F000D57EB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F52C3CB196657F000D57EB1 /* Foundation.framework */; };
 		9F52C3E7196657F000D57EB1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F52C3CF196657F000D57EB1 /* UIKit.framework */; };
 		9F52C3EF196657F000D57EB1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F52C3ED196657F000D57EB1 /* InfoPlist.strings */; };
 		9F52C3F1196657F000D57EB1 /* NearbyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F52C3F0196657F000D57EB1 /* NearbyTests.m */; };
+		9F52C40D1966583C00D57EB1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F52C3FB1966583C00D57EB1 /* AppDelegate.m */; };
+		9F52C40E1966583C00D57EB1 /* LocationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F52C3FD1966583C00D57EB1 /* LocationsViewController.m */; };
+		9F52C40F1966583C00D57EB1 /* LocationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F52C3FE1966583C00D57EB1 /* LocationsViewController.xib */; };
+		9F52C4101966583C00D57EB1 /* NearbyLocationObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F52C4001966583C00D57EB1 /* NearbyLocationObjects.m */; };
+		9F52C4111966583C00D57EB1 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F52C4021966583C00D57EB1 /* DetailsViewController.m */; };
+		9F52C4121966583C00D57EB1 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F52C4031966583C00D57EB1 /* DetailsViewController.xib */; };
+		9F52C4131966583C00D57EB1 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F52C4051966583C00D57EB1 /* SettingsViewController.m */; };
+		9F52C4141966583C00D57EB1 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F52C4061966583C00D57EB1 /* SettingsViewController.xib */; };
+		9F52C4151966583C00D57EB1 /* SpecificFiltersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F52C4081966583C00D57EB1 /* SpecificFiltersViewController.m */; };
+		9F52C4161966583C00D57EB1 /* SpecificFiltersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F52C4091966583C00D57EB1 /* SpecificFiltersViewController.xib */; };
+		9F52C4171966583C00D57EB1 /* FullMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F52C40B1966583C00D57EB1 /* FullMapViewController.m */; };
+		9F52C4181966583C00D57EB1 /* FullMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F52C40C1966583C00D57EB1 /* FullMapViewController.xib */; };
+		9F78B11B197AF633006DCDB5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F78B11A197AF633006DCDB5 /* CoreLocation.framework */; };
+		9F9F9AC5196A237500543D33 /* JMAnnotationCallout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9F9AC4196A237500543D33 /* JMAnnotationCallout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,22 +48,46 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9F52C3C8196657F000D57EB1 /* Nearby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nearby.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F049936196E4C41003EBE8A /* JMCalloutButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JMCalloutButton.h; path = ../JMCalloutButton.h; sourceTree = "<group>"; };
+		9F049937196E4C41003EBE8A /* JMCalloutButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JMCalloutButton.m; path = ../JMCalloutButton.m; sourceTree = "<group>"; };
+		9F509063197AF4DD00F5D466 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		9F509065197AF55E00F5D466 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9F52C3C8196657F000D57EB1 /* Locales.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Locales.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F52C3CB196657F000D57EB1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9F52C3CD196657F000D57EB1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		9F52C3CF196657F000D57EB1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		9F52C3D3196657F000D57EB1 /* Nearby-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Nearby-Info.plist"; sourceTree = "<group>"; };
+		9F52C3D3196657F000D57EB1 /* Locales-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Locales-Info.plist"; sourceTree = "<group>"; };
 		9F52C3D5196657F000D57EB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9F52C3D7196657F000D57EB1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9F52C3D9196657F000D57EB1 /* Nearby-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nearby-Prefix.pch"; sourceTree = "<group>"; };
-		9F52C3DA196657F000D57EB1 /* JMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMAppDelegate.h; sourceTree = "<group>"; };
-		9F52C3DB196657F000D57EB1 /* JMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMAppDelegate.m; sourceTree = "<group>"; };
+		9F52C3D9196657F000D57EB1 /* Locales-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Locales-Prefix.pch"; sourceTree = "<group>"; };
 		9F52C3DD196657F000D57EB1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		9F52C3E3196657F000D57EB1 /* NearbyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NearbyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F52C3E3196657F000D57EB1 /* LocalesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F52C3E4196657F000D57EB1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9F52C3EC196657F000D57EB1 /* NearbyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NearbyTests-Info.plist"; sourceTree = "<group>"; };
 		9F52C3EE196657F000D57EB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9F52C3F0196657F000D57EB1 /* NearbyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NearbyTests.m; sourceTree = "<group>"; };
+		9F52C3FA1966583C00D57EB1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9F52C3FB1966583C00D57EB1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9F52C3FC1966583C00D57EB1 /* LocationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationsViewController.h; sourceTree = "<group>"; };
+		9F52C3FD1966583C00D57EB1 /* LocationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationsViewController.m; sourceTree = "<group>"; };
+		9F52C3FE1966583C00D57EB1 /* LocationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationsViewController.xib; sourceTree = "<group>"; };
+		9F52C3FF1966583C00D57EB1 /* NearbyLocationObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearbyLocationObjects.h; sourceTree = "<group>"; };
+		9F52C4001966583C00D57EB1 /* NearbyLocationObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearbyLocationObjects.m; sourceTree = "<group>"; };
+		9F52C4011966583C00D57EB1 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		9F52C4021966583C00D57EB1 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		9F52C4031966583C00D57EB1 /* DetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		9F52C4041966583C00D57EB1 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		9F52C4051966583C00D57EB1 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		9F52C4061966583C00D57EB1 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		9F52C4071966583C00D57EB1 /* SpecificFiltersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecificFiltersViewController.h; sourceTree = "<group>"; };
+		9F52C4081966583C00D57EB1 /* SpecificFiltersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecificFiltersViewController.m; sourceTree = "<group>"; };
+		9F52C4091966583C00D57EB1 /* SpecificFiltersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpecificFiltersViewController.xib; sourceTree = "<group>"; };
+		9F52C40A1966583C00D57EB1 /* FullMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullMapViewController.h; sourceTree = "<group>"; };
+		9F52C40B1966583C00D57EB1 /* FullMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullMapViewController.m; sourceTree = "<group>"; };
+		9F52C40C1966583C00D57EB1 /* FullMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FullMapViewController.xib; sourceTree = "<group>"; };
+		9F78B11A197AF633006DCDB5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9F9F9AC3196A237500543D33 /* JMAnnotationCallout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMAnnotationCallout.h; sourceTree = "<group>"; };
+		9F9F9AC4196A237500543D33 /* JMAnnotationCallout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMAnnotationCallout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +95,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F78B11B197AF633006DCDB5 /* CoreLocation.framework in Frameworks */,
+				9F509067197AF57600F5D466 /* iAd.framework in Frameworks */,
 				9F52C3CE196657F000D57EB1 /* CoreGraphics.framework in Frameworks */,
+				9F509066197AF55E00F5D466 /* MapKit.framework in Frameworks */,
 				9F52C3D0196657F000D57EB1 /* UIKit.framework in Frameworks */,
 				9F52C3CC196657F000D57EB1 /* Foundation.framework in Frameworks */,
 			);
@@ -87,8 +130,8 @@
 		9F52C3C9196657F000D57EB1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9F52C3C8196657F000D57EB1 /* Nearby.app */,
-				9F52C3E3196657F000D57EB1 /* NearbyTests.xctest */,
+				9F52C3C8196657F000D57EB1 /* Locales.app */,
+				9F52C3E3196657F000D57EB1 /* LocalesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +139,9 @@
 		9F52C3CA196657F000D57EB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F78B11A197AF633006DCDB5 /* CoreLocation.framework */,
+				9F509065197AF55E00F5D466 /* MapKit.framework */,
+				9F509063197AF4DD00F5D466 /* iAd.framework */,
 				9F52C3CB196657F000D57EB1 /* Foundation.framework */,
 				9F52C3CD196657F000D57EB1 /* CoreGraphics.framework */,
 				9F52C3CF196657F000D57EB1 /* UIKit.framework */,
@@ -107,8 +153,15 @@
 		9F52C3D1196657F000D57EB1 /* Nearby */ = {
 			isa = PBXGroup;
 			children = (
-				9F52C3DA196657F000D57EB1 /* JMAppDelegate.h */,
-				9F52C3DB196657F000D57EB1 /* JMAppDelegate.m */,
+				9F52C3FA1966583C00D57EB1 /* AppDelegate.h */,
+				9F52C3FB1966583C00D57EB1 /* AppDelegate.m */,
+				9F9F9AC3196A237500543D33 /* JMAnnotationCallout.h */,
+				9F9F9AC4196A237500543D33 /* JMAnnotationCallout.m */,
+				9F049936196E4C41003EBE8A /* JMCalloutButton.h */,
+				9F049937196E4C41003EBE8A /* JMCalloutButton.m */,
+				9F9F9ABF1969FDB600543D33 /* Data Presentation Views */,
+				9F9F9AC11969FE0600543D33 /* Filters/Settings Views */,
+				9F9F9AC01969FDE200543D33 /* Model */,
 				9F52C3DD196657F000D57EB1 /* Images.xcassets */,
 				9F52C3D2196657F000D57EB1 /* Supporting Files */,
 			);
@@ -118,10 +171,10 @@
 		9F52C3D2196657F000D57EB1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9F52C3D3196657F000D57EB1 /* Nearby-Info.plist */,
+				9F52C3D3196657F000D57EB1 /* Locales-Info.plist */,
 				9F52C3D4196657F000D57EB1 /* InfoPlist.strings */,
 				9F52C3D7196657F000D57EB1 /* main.m */,
-				9F52C3D9196657F000D57EB1 /* Nearby-Prefix.pch */,
+				9F52C3D9196657F000D57EB1 /* Locales-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -144,12 +197,50 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9F9F9ABF1969FDB600543D33 /* Data Presentation Views */ = {
+			isa = PBXGroup;
+			children = (
+				9F52C3FC1966583C00D57EB1 /* LocationsViewController.h */,
+				9F52C3FD1966583C00D57EB1 /* LocationsViewController.m */,
+				9F52C3FE1966583C00D57EB1 /* LocationsViewController.xib */,
+				9F52C40A1966583C00D57EB1 /* FullMapViewController.h */,
+				9F52C40B1966583C00D57EB1 /* FullMapViewController.m */,
+				9F52C40C1966583C00D57EB1 /* FullMapViewController.xib */,
+				9F52C4011966583C00D57EB1 /* DetailsViewController.h */,
+				9F52C4021966583C00D57EB1 /* DetailsViewController.m */,
+				9F52C4031966583C00D57EB1 /* DetailsViewController.xib */,
+			);
+			name = "Data Presentation Views";
+			sourceTree = "<group>";
+		};
+		9F9F9AC01969FDE200543D33 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F52C3FF1966583C00D57EB1 /* NearbyLocationObjects.h */,
+				9F52C4001966583C00D57EB1 /* NearbyLocationObjects.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9F9F9AC11969FE0600543D33 /* Filters/Settings Views */ = {
+			isa = PBXGroup;
+			children = (
+				9F52C4041966583C00D57EB1 /* SettingsViewController.h */,
+				9F52C4051966583C00D57EB1 /* SettingsViewController.m */,
+				9F52C4061966583C00D57EB1 /* SettingsViewController.xib */,
+				9F52C4071966583C00D57EB1 /* SpecificFiltersViewController.h */,
+				9F52C4081966583C00D57EB1 /* SpecificFiltersViewController.m */,
+				9F52C4091966583C00D57EB1 /* SpecificFiltersViewController.xib */,
+			);
+			name = "Filters/Settings Views";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9F52C3C7196657F000D57EB1 /* Nearby */ = {
+		9F52C3C7196657F000D57EB1 /* Locales */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9F52C3F4196657F000D57EB1 /* Build configuration list for PBXNativeTarget "Nearby" */;
+			buildConfigurationList = 9F52C3F4196657F000D57EB1 /* Build configuration list for PBXNativeTarget "Locales" */;
 			buildPhases = (
 				9F52C3C4196657F000D57EB1 /* Sources */,
 				9F52C3C5196657F000D57EB1 /* Frameworks */,
@@ -159,14 +250,14 @@
 			);
 			dependencies = (
 			);
-			name = Nearby;
+			name = Locales;
 			productName = Nearby;
-			productReference = 9F52C3C8196657F000D57EB1 /* Nearby.app */;
+			productReference = 9F52C3C8196657F000D57EB1 /* Locales.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9F52C3E2196657F000D57EB1 /* NearbyTests */ = {
+		9F52C3E2196657F000D57EB1 /* LocalesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9F52C3F7196657F000D57EB1 /* Build configuration list for PBXNativeTarget "NearbyTests" */;
+			buildConfigurationList = 9F52C3F7196657F000D57EB1 /* Build configuration list for PBXNativeTarget "LocalesTests" */;
 			buildPhases = (
 				9F52C3DF196657F000D57EB1 /* Sources */,
 				9F52C3E0196657F000D57EB1 /* Frameworks */,
@@ -177,9 +268,9 @@
 			dependencies = (
 				9F52C3E9196657F000D57EB1 /* PBXTargetDependency */,
 			);
-			name = NearbyTests;
+			name = LocalesTests;
 			productName = NearbyTests;
-			productReference = 9F52C3E3196657F000D57EB1 /* NearbyTests.xctest */;
+			productReference = 9F52C3E3196657F000D57EB1 /* LocalesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -192,12 +283,20 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Jayant Madugula";
 				TargetAttributes = {
+					9F52C3C7196657F000D57EB1 = {
+						DevelopmentTeam = EV4C3E9NMY;
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					9F52C3E2196657F000D57EB1 = {
 						TestTargetID = 9F52C3C7196657F000D57EB1;
 					};
 				};
 			};
-			buildConfigurationList = 9F52C3C3196657EF00D57EB1 /* Build configuration list for PBXProject "Nearby" */;
+			buildConfigurationList = 9F52C3C3196657EF00D57EB1 /* Build configuration list for PBXProject "Locales" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -209,8 +308,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9F52C3C7196657F000D57EB1 /* Nearby */,
-				9F52C3E2196657F000D57EB1 /* NearbyTests */,
+				9F52C3C7196657F000D57EB1 /* Locales */,
+				9F52C3E2196657F000D57EB1 /* LocalesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -220,8 +319,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F52C4181966583C00D57EB1 /* FullMapViewController.xib in Resources */,
+				9F52C40F1966583C00D57EB1 /* LocationsViewController.xib in Resources */,
 				9F52C3D6196657F000D57EB1 /* InfoPlist.strings in Resources */,
 				9F52C3DE196657F000D57EB1 /* Images.xcassets in Resources */,
+				9F52C4121966583C00D57EB1 /* DetailsViewController.xib in Resources */,
+				9F52C4161966583C00D57EB1 /* SpecificFiltersViewController.xib in Resources */,
+				9F52C4141966583C00D57EB1 /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,8 +344,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F52C40D1966583C00D57EB1 /* AppDelegate.m in Sources */,
+				9F52C4151966583C00D57EB1 /* SpecificFiltersViewController.m in Sources */,
+				9F52C4171966583C00D57EB1 /* FullMapViewController.m in Sources */,
+				9F52C4111966583C00D57EB1 /* DetailsViewController.m in Sources */,
 				9F52C3D8196657F000D57EB1 /* main.m in Sources */,
-				9F52C3DC196657F000D57EB1 /* JMAppDelegate.m in Sources */,
+				9F52C4131966583C00D57EB1 /* SettingsViewController.m in Sources */,
+				9F9F9AC5196A237500543D33 /* JMAnnotationCallout.m in Sources */,
+				9F049938196E4C41003EBE8A /* JMCalloutButton.m in Sources */,
+				9F52C4101966583C00D57EB1 /* NearbyLocationObjects.m in Sources */,
+				9F52C40E1966583C00D57EB1 /* LocationsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +370,7 @@
 /* Begin PBXTargetDependency section */
 		9F52C3E9196657F000D57EB1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9F52C3C7196657F000D57EB1 /* Nearby */;
+			target = 9F52C3C7196657F000D57EB1 /* Locales */;
 			targetProxy = 9F52C3E8196657F000D57EB1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -358,10 +470,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Nearby/Nearby-Prefix.pch";
-				INFOPLIST_FILE = "Nearby/Nearby-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Nearby/Locales-Prefix.pch";
+				INFOPLIST_FILE = "Nearby/Locales-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = Locales;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -371,10 +485,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Nearby/Nearby-Prefix.pch";
-				INFOPLIST_FILE = "Nearby/Nearby-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Nearby/Locales-Prefix.pch";
+				INFOPLIST_FILE = "Nearby/Locales-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = Locales;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -395,7 +511,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "NearbyTests/NearbyTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LocalesTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -413,7 +529,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Nearby/Nearby-Prefix.pch";
 				INFOPLIST_FILE = "NearbyTests/NearbyTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LocalesTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -422,7 +538,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9F52C3C3196657EF00D57EB1 /* Build configuration list for PBXProject "Nearby" */ = {
+		9F52C3C3196657EF00D57EB1 /* Build configuration list for PBXProject "Locales" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9F52C3F2196657F000D57EB1 /* Debug */,
@@ -431,21 +547,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9F52C3F4196657F000D57EB1 /* Build configuration list for PBXNativeTarget "Nearby" */ = {
+		9F52C3F4196657F000D57EB1 /* Build configuration list for PBXNativeTarget "Locales" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9F52C3F5196657F000D57EB1 /* Debug */,
 				9F52C3F6196657F000D57EB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		9F52C3F7196657F000D57EB1 /* Build configuration list for PBXNativeTarget "NearbyTests" */ = {
+		9F52C3F7196657F000D57EB1 /* Build configuration list for PBXNativeTarget "LocalesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9F52C3F8196657F000D57EB1 /* Debug */,
 				9F52C3F9196657F000D57EB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

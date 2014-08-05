@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9F52C3C7196657F000D57EB1"
-               BuildableName = "Nearby.app"
-               BlueprintName = "Nearby"
-               ReferencedContainer = "container:Nearby.xcodeproj">
+               BuildableName = "Locales.app"
+               BlueprintName = "Locales"
+               ReferencedContainer = "container:Locales.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9F52C3E2196657F000D57EB1"
-               BuildableName = "NearbyTests.xctest"
-               BlueprintName = "NearbyTests"
-               ReferencedContainer = "container:Nearby.xcodeproj">
+               BuildableName = "LocalesTests.xctest"
+               BlueprintName = "LocalesTests"
+               ReferencedContainer = "container:Locales.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9F52C3C7196657F000D57EB1"
-            BuildableName = "Nearby.app"
-            BlueprintName = "Nearby"
-            ReferencedContainer = "container:Nearby.xcodeproj">
+            BuildableName = "Locales.app"
+            BlueprintName = "Locales"
+            ReferencedContainer = "container:Locales.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,12 +62,17 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9F52C3C7196657F000D57EB1"
-            BuildableName = "Nearby.app"
-            BlueprintName = "Nearby"
-            ReferencedContainer = "container:Nearby.xcodeproj">
+            BuildableName = "Locales.app"
+            BlueprintName = "Locales"
+            ReferencedContainer = "container:Locales.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
+         <AdditionalOption
+            key = "NSZombieEnabled"
+            value = "YES"
+            isEnabled = "YES">
+         </AdditionalOption>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
@@ -80,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9F52C3C7196657F000D57EB1"
-            BuildableName = "Nearby.app"
-            BlueprintName = "Nearby"
-            ReferencedContainer = "container:Nearby.xcodeproj">
+            BuildableName = "Locales.app"
+            BlueprintName = "Locales"
+            ReferencedContainer = "container:Locales.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

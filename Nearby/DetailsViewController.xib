@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsViewController">
+            <connections>
+                <outlet property="mapView" destination="16" id="37"/>
+                <outlet property="tableView" destination="5GC-1g-XMQ" id="mhk-5e-Mmk"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="16">
+                    <rect key="frame" x="0.0" y="62" width="320" height="316"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="U4T-sb-4C1"/>
+                    </constraints>
+                </mapView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="5GC-1g-XMQ">
+                    <rect key="frame" x="0.0" y="377" width="320" height="191"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="191" id="0qS-av-snZ"/>
+                        <constraint firstAttribute="width" constant="320" id="6m7-hy-V1c"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="zhg-MH-6N9"/>
+                        <outlet property="delegate" destination="-1" id="xgY-W4-Fhw"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="5GC-1g-XMQ" secondAttribute="trailing" id="6aW-HQ-ChE"/>
+                <constraint firstItem="16" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="KrT-wF-QfS"/>
+                <constraint firstItem="5GC-1g-XMQ" firstAttribute="top" secondItem="16" secondAttribute="bottom" constant="-1" id="UPY-RN-NKH"/>
+                <constraint firstAttribute="bottom" secondItem="5GC-1g-XMQ" secondAttribute="bottom" id="dai-h8-qDv"/>
+                <constraint firstItem="5GC-1g-XMQ" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="kFD-9A-anY"/>
+                <constraint firstAttribute="trailing" secondItem="16" secondAttribute="trailing" id="mit-w1-dom"/>
+                <constraint firstItem="16" firstAttribute="top" secondItem="1" secondAttribute="top" constant="62" id="zvx-8r-qOC"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

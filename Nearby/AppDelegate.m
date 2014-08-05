@@ -1,20 +1,33 @@
 //
-//  JMAppDelegate.m
-//  Nearby
+//  AppDelegate.m
+//  NearbyApp
 //
-//  Created by Jayant Madugula on 7/3/14.
-//  Copyright (c) 2014 Jayant Madugula. All rights reserved.
+//  Created by iD Student on 6/24/13.
+//  Copyright (c) 2013 iD Student. All rights reserved.
 //
 
-#import "JMAppDelegate.h"
+#import "AppDelegate.h"
+#import "NearbyLocationObjects.h"
+#import "SettingsViewController.h"
+#import "SpecificFiltersViewController.h"
 
-@implementation JMAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    nlo = [[NearbyLocationObjects alloc] init]; //On app startup: load data!
+    svc = [[SettingsViewController alloc] init];
+    
+    lvc = [[LocationsViewController alloc] init];
+    nvc = [[UINavigationController alloc] initWithRootViewController:lvc];
+    
+//    lvc.navigationController = nvc;
+    
+    [self.window setRootViewController:svc];
     [self.window makeKeyAndVisible];
     return YES;
 }
