@@ -12,6 +12,7 @@
 #import "SpecificFiltersViewController.h"
 #import "LocationsViewController.h"
 #import "NearbyLocationObjects.h"
+#import "JMPreferencesViewController.h"
 
 @interface SettingsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate, UIAlertViewDelegate, ADBannerViewDelegate>
 {
@@ -23,10 +24,8 @@
 
 @property (strong, nonatomic) IBOutlet UITableView *theTableView;
 @property NSString *currentRequest;
-@property CLLocationManager* locationManager;
 
 - (void)searchButtonNotification:(NSNotification *)notification;
-- (void)showSearchResults:(NSString *)searchCategory;
-- (void)locationServicesRestart;
+- (void)showSearchResults:(NSString *)searchCategory withIndexPath:(NSIndexPath *)indexPath;
 
 @end

@@ -154,7 +154,7 @@
     }
 }
 
-- (void)presentData:(NSString *)request andCurrentLocation:(CLLocation *)location //called by SettingsViewController, loads correct data into tableView.
+- (void)presentData:(NSString *)request //called by SettingsViewController, loads correct data into tableView.
 {
     self.navigationBar.topItem.title = request;
     
@@ -205,6 +205,7 @@
     [self.view bringSubviewToFront:self.addFilterView];
     self.addFilterView.alpha = 0.7;
     self.addFilterLabel.text = @"New Filter Name:";
+    self.filterTextField.text = @"";
     addFilter = YES;
     
     [self.filterTextField becomeFirstResponder];
@@ -357,7 +358,7 @@
     }
     else if (cell.accessoryType == UITableViewCellAccessoryCheckmark)
     {
-        [self.searchList removeObjectIdenticalTo:cell.textLabel.text];
+        [self.searchList removeObject:cell.textLabel.text];
         NSLog(@"Removed: %@", cell.textLabel.text);
         cell.accessoryType = UITableViewCellAccessoryNone;
         [self setSearchButtonTitle];

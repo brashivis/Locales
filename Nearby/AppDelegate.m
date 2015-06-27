@@ -10,6 +10,7 @@
 #import "NearbyLocationObjects.h"
 #import "SettingsViewController.h"
 #import "SpecificFiltersViewController.h"
+#import "JMUserLocationObjects.h"
 
 @implementation AppDelegate
 
@@ -18,6 +19,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    JMUserLocationObjects* locationObject = [[JMUserLocationObjects alloc] init];
+    [locationObject beginUpdatingData];
     
     nlo = [[NearbyLocationObjects alloc] init]; //On app startup: load data!
     svc = [[SettingsViewController alloc] init];

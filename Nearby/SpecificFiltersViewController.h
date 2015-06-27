@@ -45,7 +45,7 @@
 
 
 #pragma mark Methods – Dealing with Data
-- (void)presentData: (NSString *)request andCurrentLocation:(CLLocation *)location;
+- (void)presentData: (NSString *)request;
 - (IBAction)searchButtonTapped:(id)sender;
 - (void)uploadUserDefaults;
 @end

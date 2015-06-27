@@ -7,13 +7,14 @@
 //
 
 #import "SettingsViewController.h"
+#import "JMUserLocationObjects.h"
 
 @interface SettingsViewController ()
 
 @end
 
 @implementation SettingsViewController
-@synthesize currentRequest, locationManager, theTableView;
+@synthesize currentRequest, theTableView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -47,34 +48,13 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    [self locationServicesRestart];
     [self.theTableView reloadData];
 }
 
-- (void)locationServicesRestart
-{
-    if (self.locationManager == nil)
-    {
-        self.locationManager = [[CLLocationManager alloc] init];
-        self.locationManager.delegate = self;
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-    }
-    
-    [self.locationManager startUpdatingLocation];
-    self.locationManager.pausesLocationUpdatesAutomatically = YES;
-}
-
-- (void)showSearchResults:(NSString *)searchCategory
+- (void)showSearchResults:(NSString *)searchCategory withIndexPath:(NSIndexPath *)indexPath
 {
     LocationsViewController* locationsVC = [[LocationsViewController alloc] init];
     locationsVC.navController = [[UINavigationController alloc] initWithRootViewController:locationsVC];
-    
-    
-    if (locationManager.location == nil)
-    {
-        [self.locationManager stopUpdatingLocation];
-        [self.locationManager startUpdatingLocation];
-    }
     
     if ([[NSUserDefaults standardUserDefaults] objectForKey:@"Search Dictionary"])
     {
@@ -82,8 +62,9 @@
         NSArray* requestArray = [requestDictionary objectForKey:searchCategory];
         if ([requestArray count] > 0)
         {
+            JMUserLocationObjects* locationObject = [[JMUserLocationObjects alloc] init];
             NearbyLocationObjects* nearbyObject = [[NearbyLocationObjects alloc] init];
-            [nearbyObject beginDataRequest:self.locationManager.location withRequestArray:requestArray];
+            [nearbyObject beginDataRequest:locationObject.locationManager.location withRequestArray:requestArray];
             
             [activityIndicator stopAnimating];
             
@@ -95,18 +76,22 @@
             [locationsVC.navController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
                                                                             [UIFont fontWithName:@"HelveticaNeue-Light" size:22],
                                                                             NSFontAttributeName, nil]];
-            locationsVC.locationManager = self.locationManager;
+            locationsVC.locationManager = locationObject.locationManager;
         }
         else
         {
-            UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"No Filters Selected!" message:@"Tap the i to select some filters." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-            [alert show];
+//            UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"No Filters Selected!" message:@"Tap the i to select some filters." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+//            [alert show];
+            
+            [self tableView:theTableView accessoryButtonTappedForRowWithIndexPath:indexPath];
         }
     }
     else
     {
-        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"No Filters Selected!" message:@"Tap the i to select some filters." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-        [alert show];
+//        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"No Filters Selected!" message:@"Tap the i to select some filters." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+//        [alert show];
+        
+        [self tableView:theTableView accessoryButtonTappedForRowWithIndexPath:indexPath];
     }
     
 }
@@ -117,14 +102,21 @@
     activityIndicator.hidesWhenStopped = YES;
     [activityIndicator startAnimating];
     
-    [self showSearchResults:notification.object];
+    [self showSearchResults:notification.object withIndexPath:nil];
+}
+
+- (IBAction)openUserPreferencesView:(id)sender
+{
+    JMPreferencesViewController* prefVC = [[JMPreferencesViewController alloc] init];
+    prefVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    [self presentViewController:prefVC animated:YES completion:NULL];
 }
 
 #pragma mark – TableView Action Methods
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString* requestString = titleArray[indexPath.row];
-    [self showSearchResults:requestString];
+    [self showSearchResults:requestString withIndexPath:indexPath];
     
     [self.theTableView deselectRowAtIndexPath:indexPath animated:YES];
 }
@@ -136,7 +128,7 @@
     
     [self presentViewController:specificFiltersVC animated:YES completion:NULL];
     NSLog(@"%@", self.currentRequest);
-    [specificFiltersVC presentData:self.currentRequest andCurrentLocation:self.locationManager.location];
+    [specificFiltersVC presentData:self.currentRequest];
     
     [self.theTableView deselectRowAtIndexPath:indexPath animated:YES];
 }
@@ -166,17 +158,17 @@
         long num = [searchArray count];
         if (num == 1)
         {
-            cell.detailTextLabel.text = [NSString stringWithFormat:@"Search (%ld filter selected)", num];
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"Tap to Search (%ld filter selected)", num];
         }
         else if (num == 0)
         {
-            cell.detailTextLabel.text = @"No Filters Selected";
+            cell.detailTextLabel.text = @"Tap to Select Filters";
         }
-        else { cell.detailTextLabel.text = [NSString stringWithFormat:@"Search (%ld filters selected)", num]; }
+        else { cell.detailTextLabel.text = [NSString stringWithFormat:@"Tap to Search (%ld filters selected)", num]; }
     }
     else
     {
-        cell.detailTextLabel.text = @"No filters selected";
+        cell.detailTextLabel.text = @"Tap to Select Filters";
     }
     cell.detailTextLabel.textColor = [UIColor colorWithRed:0.0 green:(122.0/255.0) blue:1.0 alpha:1.0];
     cell.accessoryType = UITableViewCellAccessoryDetailButton;
@@ -188,22 +180,5 @@
 {
     cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:20.0];
     cell.detailTextLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:14.0];
-}
-
-#pragma mark CoreLocation Methods
-- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
-{
-//    long lastIndex = [locations count] - 1;
-//    CLLocation* userLocation = locations[lastIndex];
-    
-    [self.locationManager stopUpdatingLocation];
-    
-    NSLog(@"LocationManager did update user location.");
-}
-
-- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
-{
-    [self.locationManager stopUpdatingLocation];
-    [self.locationManager startUpdatingLocation]; //Force Restart.
 }
 @end

@@ -113,10 +113,8 @@
 
 - (void)callNumber
 {
-    NSLog(@"Entered");
     NSString* callString = [@"tel:" stringByAppendingString: self.phoneString];
     [callString stringByReplacingOccurrencesOfString:@"+" withString:@""];
-    NSLog(@"%@", callString);
     NSURL* callURL = [[NSURL alloc] initWithString:callString];
     [[UIApplication sharedApplication] openURL:callURL];
 }
@@ -231,6 +229,7 @@
         }
         else
         {
+            // No website, Google location
             NSString* request = self.title;
             request = [request stringByReplacingOccurrencesOfString:@" " withString:@"+"];
             NSString* urlRequest = [NSString stringWithFormat:@"https://www.google.com/search?q=%@", request];

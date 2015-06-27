@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F049938196E4C41003EBE8A /* JMCalloutButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F049937196E4C41003EBE8A /* JMCalloutButton.m */; };
+		9F12648A199C803300E658BA /* Locales_SettingsPic.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F126489199C803300E658BA /* Locales_SettingsPic.png */; };
+		9F12648E199C81AB00E658BA /* Locales_SettingsPic_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F12648D199C81AB00E658BA /* Locales_SettingsPic_2.png */; };
 		9F509066197AF55E00F5D466 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F509065197AF55E00F5D466 /* MapKit.framework */; };
 		9F509067197AF57600F5D466 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F509063197AF4DD00F5D466 /* iAd.framework */; };
 		9F52C3CC196657F000D57EB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F52C3CB196657F000D57EB1 /* Foundation.framework */; };
@@ -34,7 +35,11 @@
 		9F52C4171966583C00D57EB1 /* FullMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F52C40B1966583C00D57EB1 /* FullMapViewController.m */; };
 		9F52C4181966583C00D57EB1 /* FullMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F52C40C1966583C00D57EB1 /* FullMapViewController.xib */; };
 		9F78B11B197AF633006DCDB5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F78B11A197AF633006DCDB5 /* CoreLocation.framework */; };
+		9F87AC001996CA5C009B971D /* JMPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F87ABFE1996CA5C009B971D /* JMPreferencesViewController.m */; };
+		9F87AC011996CA5C009B971D /* JMPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F87ABFF1996CA5C009B971D /* JMPreferencesViewController.xib */; };
+		9F87AC041996CA8C009B971D /* JMCalloutButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F87AC031996CA8C009B971D /* JMCalloutButton.m */; };
 		9F9F9AC5196A237500543D33 /* JMAnnotationCallout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9F9AC4196A237500543D33 /* JMAnnotationCallout.m */; };
+		9FF585CB1ADC6D2A00DC4019 /* JMUserLocationObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF585CA1ADC6D2A00DC4019 /* JMUserLocationObjects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9F049936196E4C41003EBE8A /* JMCalloutButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JMCalloutButton.h; path = ../JMCalloutButton.h; sourceTree = "<group>"; };
-		9F049937196E4C41003EBE8A /* JMCalloutButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JMCalloutButton.m; path = ../JMCalloutButton.m; sourceTree = "<group>"; };
+		9F126489199C803300E658BA /* Locales_SettingsPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locales_SettingsPic.png; sourceTree = "<group>"; };
+		9F12648D199C81AB00E658BA /* Locales_SettingsPic_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locales_SettingsPic_2.png; sourceTree = "<group>"; };
 		9F509063197AF4DD00F5D466 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		9F509065197AF55E00F5D466 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9F52C3C8196657F000D57EB1 /* Locales.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Locales.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,8 +91,15 @@
 		9F52C40B1966583C00D57EB1 /* FullMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullMapViewController.m; sourceTree = "<group>"; };
 		9F52C40C1966583C00D57EB1 /* FullMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FullMapViewController.xib; sourceTree = "<group>"; };
 		9F78B11A197AF633006DCDB5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9F87ABFD1996CA5C009B971D /* JMPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMPreferencesViewController.h; sourceTree = "<group>"; };
+		9F87ABFE1996CA5C009B971D /* JMPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMPreferencesViewController.m; sourceTree = "<group>"; };
+		9F87ABFF1996CA5C009B971D /* JMPreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMPreferencesViewController.xib; sourceTree = "<group>"; };
+		9F87AC021996CA8C009B971D /* JMCalloutButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMCalloutButton.h; sourceTree = "<group>"; };
+		9F87AC031996CA8C009B971D /* JMCalloutButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMCalloutButton.m; sourceTree = "<group>"; };
 		9F9F9AC3196A237500543D33 /* JMAnnotationCallout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMAnnotationCallout.h; sourceTree = "<group>"; };
 		9F9F9AC4196A237500543D33 /* JMAnnotationCallout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMAnnotationCallout.m; sourceTree = "<group>"; };
+		9FF585C91ADC6D2A00DC4019 /* JMUserLocationObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUserLocationObjects.h; sourceTree = "<group>"; };
+		9FF585CA1ADC6D2A00DC4019 /* JMUserLocationObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUserLocationObjects.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,12 +169,14 @@
 				9F52C3FB1966583C00D57EB1 /* AppDelegate.m */,
 				9F9F9AC3196A237500543D33 /* JMAnnotationCallout.h */,
 				9F9F9AC4196A237500543D33 /* JMAnnotationCallout.m */,
-				9F049936196E4C41003EBE8A /* JMCalloutButton.h */,
-				9F049937196E4C41003EBE8A /* JMCalloutButton.m */,
+				9F87AC021996CA8C009B971D /* JMCalloutButton.h */,
+				9F87AC031996CA8C009B971D /* JMCalloutButton.m */,
 				9F9F9ABF1969FDB600543D33 /* Data Presentation Views */,
 				9F9F9AC11969FE0600543D33 /* Filters/Settings Views */,
 				9F9F9AC01969FDE200543D33 /* Model */,
 				9F52C3DD196657F000D57EB1 /* Images.xcassets */,
+				9F126489199C803300E658BA /* Locales_SettingsPic.png */,
+				9F12648D199C81AB00E658BA /* Locales_SettingsPic_2.png */,
 				9F52C3D2196657F000D57EB1 /* Supporting Files */,
 			);
 			path = Nearby;
@@ -218,6 +232,8 @@
 			children = (
 				9F52C3FF1966583C00D57EB1 /* NearbyLocationObjects.h */,
 				9F52C4001966583C00D57EB1 /* NearbyLocationObjects.m */,
+				9FF585C91ADC6D2A00DC4019 /* JMUserLocationObjects.h */,
+				9FF585CA1ADC6D2A00DC4019 /* JMUserLocationObjects.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -225,6 +241,9 @@
 		9F9F9AC11969FE0600543D33 /* Filters/Settings Views */ = {
 			isa = PBXGroup;
 			children = (
+				9F87ABFD1996CA5C009B971D /* JMPreferencesViewController.h */,
+				9F87ABFE1996CA5C009B971D /* JMPreferencesViewController.m */,
+				9F87ABFF1996CA5C009B971D /* JMPreferencesViewController.xib */,
 				9F52C4041966583C00D57EB1 /* SettingsViewController.h */,
 				9F52C4051966583C00D57EB1 /* SettingsViewController.m */,
 				9F52C4061966583C00D57EB1 /* SettingsViewController.xib */,
@@ -319,8 +338,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F87AC011996CA5C009B971D /* JMPreferencesViewController.xib in Resources */,
 				9F52C4181966583C00D57EB1 /* FullMapViewController.xib in Resources */,
 				9F52C40F1966583C00D57EB1 /* LocationsViewController.xib in Resources */,
+				9F12648A199C803300E658BA /* Locales_SettingsPic.png in Resources */,
+				9F12648E199C81AB00E658BA /* Locales_SettingsPic_2.png in Resources */,
 				9F52C3D6196657F000D57EB1 /* InfoPlist.strings in Resources */,
 				9F52C3DE196657F000D57EB1 /* Images.xcassets in Resources */,
 				9F52C4121966583C00D57EB1 /* DetailsViewController.xib in Resources */,
@@ -351,9 +373,11 @@
 				9F52C3D8196657F000D57EB1 /* main.m in Sources */,
 				9F52C4131966583C00D57EB1 /* SettingsViewController.m in Sources */,
 				9F9F9AC5196A237500543D33 /* JMAnnotationCallout.m in Sources */,
-				9F049938196E4C41003EBE8A /* JMCalloutButton.m in Sources */,
 				9F52C4101966583C00D57EB1 /* NearbyLocationObjects.m in Sources */,
+				9F87AC041996CA8C009B971D /* JMCalloutButton.m in Sources */,
+				9FF585CB1ADC6D2A00DC4019 /* JMUserLocationObjects.m in Sources */,
 				9F52C40E1966583C00D57EB1 /* LocationsViewController.m in Sources */,
+				9F87AC001996CA5C009B971D /* JMPreferencesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,11 +495,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Nearby/Locales-Prefix.pch";
 				INFOPLIST_FILE = "Nearby/Locales-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = Locales;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -486,11 +512,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Nearby/Locales-Prefix.pch";
 				INFOPLIST_FILE = "Nearby/Locales-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = Locales;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
