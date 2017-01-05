@@ -2,8 +2,8 @@
 //  SettingsViewController.h
 //  NearbyApp
 //
-//  Created by iD Student on 6/27/13.
-//  Copyright (c) 2013 iD Student. All rights reserved.
+//  Created by Jayant Madugula on 6/27/13.
+//  Copyright (c) 2013 Jayant Madugula. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

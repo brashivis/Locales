@@ -2,8 +2,8 @@
 //  LocationsViewController.m
 //  NearbyApp
 //
-//  Created by iD Student on 6/24/13.
-//  Copyright (c) 2013 iD Student. All rights reserved.
+//  Created by Jayant Madugula on 6/24/13.
+//  Copyright (c) 2013 Jayant Madugula. All rights reserved.
 //
 
 #import "LocationsViewController.h"
@@ -35,15 +35,11 @@
     requestStatus = 0;
     
     UIBarButtonItem* settingsButton = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(closeView)];
-    [settingsButton setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"HelveticaNeue" size:18], NSFontAttributeName, /*[UIColor colorWithRed:(250/255.0) green:98.0/255 blue:103/255.0 alpha:1.0],NSForegroundColorAttributeName,*/ nil] forState:UIControlStateNormal]; // Change color eventually...?
+    [settingsButton setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"HelveticaNeue" size:18], NSFontAttributeName, nil] forState:UIControlStateNormal];
     
-    //UIBarButtonItem* refreshButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(<#selector#>)]; //NEED A BETTER FUNCTION TO SEND THIS TO.
-    
-    //    [self.navigationItem setRightBarButtonItem:refreshButton];
     [self.navigationItem setLeftBarButtonItem:settingsButton];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(dataReceived:) name:@"Data Received Notification" object:nil
-     ];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(dataReceived:) name:@"Data Received Notification" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(launchDetailsView:) name:@"Details View Notification" object:nil];
 }
 
@@ -53,7 +49,7 @@
     {
         FullMapViewController* fullMapVC = [[FullMapViewController alloc] init];
         fullMapVC.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-        [self presentViewController:fullMapVC animated:NO completion:NULL]; //Works, but data is gone from mapVC
+        [self presentViewController:fullMapVC animated:NO completion:NULL];
         [fullMapVC loadMap:self.locationManager.location withSearchResults:self.arrayWithNearbyLocations andTitle:self.navigationItem.title];
     }
     else
@@ -76,8 +72,7 @@
 #pragma mark Setting Up Subviews and Getting Data
 - (void)dataReceived:(NSNotification *)notification
 {
-//    NSLog(@"YAY: %@", notification.object);
-    self.arrayWithNearbyLocations = notification.object; //Sets data to theTableView's data source.
+    self.arrayWithNearbyLocations = notification.object; // Sets data to theTableView's data source.
     [theTableView reloadData];
 }
 

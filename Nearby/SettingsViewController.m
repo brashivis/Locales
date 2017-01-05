@@ -39,8 +39,6 @@
     self.canDisplayBannerAds = YES;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(searchButtonNotification:) name:@"Search Button Tapped" object:nil];
-    
-    iconsArray = [[NSArray alloc] initWithObjects:@"Food.png", @"Entertainment.png", @"Attractions.png", @"Shopping.png", @"Lodging.png", @"Transportation.png", @"Healthcare.png", @"Favorites.png", nil]; //Make sure these pictures get in somewhere...!!
     titleArray = [[NSArray alloc] initWithObjects:@"Food and Drink", @"Entertainment", @"Local Attractions", @"Shopping", @"Lodging", @"Transportation", @"Healthcare", @"Favorites", nil];
     
     [self.theTableView reloadData];
@@ -80,17 +78,11 @@
         }
         else
         {
-//            UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"No Filters Selected!" message:@"Tap the i to select some filters." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-//            [alert show];
-            
             [self tableView:theTableView accessoryButtonTappedForRowWithIndexPath:indexPath];
         }
     }
     else
     {
-//        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"No Filters Selected!" message:@"Tap the i to select some filters." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-//        [alert show];
-        
         [self tableView:theTableView accessoryButtonTappedForRowWithIndexPath:indexPath];
     }
     
@@ -148,7 +140,6 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:tableIdentifier];
     }
     NSUInteger row = [indexPath row];
-//    cell.imageView.image = iconsArray[row];
     cell.textLabel.text = titleArray[row];
     if ([[NSUserDefaults standardUserDefaults] objectForKey:@"Search Dictionary"])
     {

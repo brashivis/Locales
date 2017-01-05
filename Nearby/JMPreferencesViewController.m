@@ -15,18 +15,6 @@
 @implementation JMPreferencesViewController
 
 @synthesize theTableView;
-//TO DO:
-/*
-1. Give user ability to change distance, either slider or options (rural, suburban, urban) (Done)
-2. Make sure resetFilters works (Done)
-3. Link to website (Done)
-4. Support email link (Done)
-5. Add "Refresh" button to main view
-    a. Make new class
-    b. This class deals with location data only
-    c. Call class from LocationsVC and SettingsVC so Refresh button is possible
-6. Add "Done" button to map view
-*/
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -85,7 +73,7 @@
     [[NSUserDefaults standardUserDefaults] setObject:distanceNum forKey:@"Distance Num"];
 }
 
-- (IBAction)resetFilters:(id)sender //Don't know if this works! TEST!!
+- (IBAction)resetFilters:(id)sender
 {
     UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Are you sure?" message:@"Are you sure want to reset the app to factory settings? This cannot be undone." delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Reset", nil];
     [alert dismissWithClickedButtonIndex:0 animated:YES];
@@ -180,7 +168,7 @@
 {
     if (indexPath.row == 0)
     {
-        NSURL* websiteURL = [[NSURL alloc] initWithString:@"http://localesapp.squarespace.com"];
+        NSURL* websiteURL = [[NSURL alloc] initWithString:@"http://localesapp.squarespace.com"]; // Note: website doesn't exist anymore
         [[UIApplication sharedApplication] openURL:websiteURL];
     }
     else if (indexPath.row == 1)

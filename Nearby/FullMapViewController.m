@@ -3,7 +3,7 @@
 //  NearbyApp
 //
 //  Created by Jayant Madugula on 7/17/13.
-//  Copyright (c) 2013 iD Student. All rights reserved.
+//  Copyright (c) 2013 Jayant Madugula. All rights reserved.
 //
 
 #import "FullMapViewController.h"
@@ -72,8 +72,6 @@
         
         JMAnnotationCallout* annotation = [[JMAnnotationCallout alloc] initWithTitle:nearbyObject.mapItem.name subtitle:nearbyObject.filterType Coordinate:nearbyObject.mapItem.placemark.coordinate];
         
-        
-        //MKAnnotationView* annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"Annotation"];
         MKPinAnnotationView* annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"Annotation"];
         
         annotationView.canShowCallout = YES;
@@ -153,19 +151,6 @@
     }
     else {return nearbyLocation.mapItem.phoneNumber;}
 }
-
-////MAYBE THIS IS THE FUNCTION I NEED... CHECK BY WRITING THE CORRECT CODE!!
-//- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
-//{
-//    if(![view.annotation isKindOfClass:[MKUserLocation class]]) {
-//        JMAnnotationCallout *calloutView = (JMAnnotationCallout *)[[[NSBundle mainBundle] loadNibNamed:@"calloutView" owner:self options:nil] objectAtIndex:0];
-//        CGRect calloutViewFrame = calloutView.frame;
-//        calloutViewFrame.origin = CGPointMake(-calloutViewFrame.size.width/2 + 15, -calloutViewFrame.size.height);
-//        calloutView.frame = calloutViewFrame;
-//        [calloutView.title setText:[(myAnnotation*)[view annotation] title]];
-//        [view addSubview:calloutView];
-//    }
-//}
 
 - (IBAction)closeView:(id)sender
 {

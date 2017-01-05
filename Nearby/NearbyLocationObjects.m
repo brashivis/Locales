@@ -3,7 +3,7 @@
 //  NearbyApp
 //
 //  Created by Jayant Madugula on 8/7/13.
-//  Copyright (c) 2013 iD Student. All rights reserved.
+//  Copyright (c) 2013 Jayant Madugula. All rights reserved.
 //
 
 #import "NearbyLocationObjects.h"
@@ -110,7 +110,6 @@
              {
                  [resultArray addObject:nearbyObject]; //Puts custom objects into array.
              }
-             else { NSLog(@"Nope"); }
          }
          if (error) { NSLog(@"MKErrorDomain: %@", [error localizedDescription]); }
          else { [self manageData:resultArray]; }

@@ -3,7 +3,7 @@
 //  NearbyApp
 //
 //  Created by Jayant Madugula on 12/27/13.
-//  Copyright (c) 2013 iD Student. All rights reserved.
+//  Copyright (c) 2013 Jayant Madugula. All rights reserved.
 //
 
 #import "SpecificFiltersViewController.h"
@@ -43,13 +43,6 @@
     
     self.filterTextField.alpha = 1.0;
     self.filterTextField.delegate = self;
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     [self.navigationBar setTitleTextAttributes:
      [NSDictionary dictionaryWithObjectsAndKeys:
@@ -154,7 +147,7 @@
     }
 }
 
-- (void)presentData:(NSString *)request //called by SettingsViewController, loads correct data into tableView.
+- (void)presentData:(NSString *)request // called by SettingsViewController, loads correct data into tableView.
 {
     self.navigationBar.topItem.title = request;
     
@@ -167,10 +160,10 @@
     NSLog(@"First SearchList: %@", self.searchList);
     
     NSDictionary* dataDictionary = [[NSUserDefaults standardUserDefaults] valueForKey:@"Data Dictionary"];
-    self.dataArray = [[dataDictionary objectForKey:request] mutableCopy]; //Gets relevant dataArray.
+    self.dataArray = [[dataDictionary objectForKey:request] mutableCopy]; // Gets relevant dataArray.
     NSLog(@"request: %@, First DataArray: %@", request, self.dataArray);
     
-    [self.tableView reloadData]; //Uses dataArray to present loaded data.
+    [self.tableView reloadData]; // Uses dataArray to present loaded data.
 }
 
 - (void)uploadUserDefaults
@@ -327,22 +320,6 @@
 }
 
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
- 
-}
-
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-
 #pragma mark - Table view delegate
 
 // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
@@ -367,11 +344,6 @@
     [self uploadUserDefaults];
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-//    NSString* cellText = [dataArray objectAtIndex:indexPath.row];
-//    selectedRow = indexPath.row;
-//    [self openEditFilterView:cellText];
-//    [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath

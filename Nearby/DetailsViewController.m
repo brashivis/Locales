@@ -2,8 +2,8 @@
 //  DetailsViewController.m
 //  NearbyApp
 //
-//  Created by iD Student on 6/24/13.
-//  Copyright (c) 2013 iD Student. All rights reserved.
+//  Created by Jayant Madugula on 6/24/13.
+//  Copyright (c) 2013 Jayant Madugula. All rights reserved.
 //
 
 #import "DetailsViewController.h"
@@ -59,8 +59,6 @@
     MKCoordinateRegion coordinateRegion =  MKCoordinateRegionMakeWithDistance(coordinate, 2500, 2500);
 
     [mapView setRegion:coordinateRegion animated: YES];
-    
-    //NSLog(@"%f, %f", (float)(mapView.userLocation.coordinate.longitude), (float)(mapView.userLocation.coordinate.longitude));
     
     if (mapView.userLocation.coordinate.longitude != 0)
     {
@@ -160,7 +158,6 @@
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:18.0];
-//    cell.textLabel.textColor = [UIColor colorWithRed:(250/255.0) green:98.0/255 blue:103/255.0 alpha:1.0];
 }
 
 // Override to support conditional editing of the table view.

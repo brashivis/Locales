@@ -19,8 +19,6 @@
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
-    //    long lastIndex = [locations count] - 1;
-    //    CLLocation* userLocation = locations[lastIndex];
     
     [self.locationManager stopUpdatingLocation];
     [self.locationManager stopUpdatingHeading];

@@ -3,7 +3,7 @@
 //  NearbyApp
 //
 //  Created by Jayant Madugula on 7/17/13.
-//  Copyright (c) 2013 iD Student. All rights reserved.
+//  Copyright (c) 2013 Jayant Madugula. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

@@ -299,7 +299,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = JM;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Jayant Madugula";
 				TargetAttributes = {
 					9F52C3C7196657F000D57EB1 = {
@@ -437,6 +437,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -500,6 +501,7 @@
 				GCC_PREFIX_HEADER = "Nearby/Locales-Prefix.pch";
 				INFOPLIST_FILE = "Nearby/Locales-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jayantmadugula.nearby;
 				PRODUCT_NAME = Locales;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -517,6 +519,7 @@
 				GCC_PREFIX_HEADER = "Nearby/Locales-Prefix.pch";
 				INFOPLIST_FILE = "Nearby/Locales-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jayantmadugula.nearby;
 				PRODUCT_NAME = Locales;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
